@@ -1,0 +1,25 @@
+DataBase:
+
+flask db init- initialize flask database
+
+flask db migrate- Automatic Migration. Compares the database schema as defined by the database models, against the actual database schema 
+currently used in the database. It then populates the migration script with the changes necessary to make the database 
+schema match the application models.
+
+    -Does not make any changes to the database, it just creates new migration script
+
+Upgrade- applies to migration 
+Downgrade- removes from migration 
+
+Primary Key-
+    -Uniquely identifies an object within the database
+    -A table can contain only one Primary Key
+    -No two rows can carry duplicate values for a primary key attribute
+    -Primary keys do now allow for Null values 
+    
+
+Foreign Key-
+    -Refers to the feild in a table which is the pirmary key of another table 
+    -A table can contain more than one Foreign key
+    -Foreign key can contain duplicate values
+    -Foreign Keys allow for Null values 
